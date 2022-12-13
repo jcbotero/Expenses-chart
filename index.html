@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stly.css" rel="stylesheet">
+    <link rel="preconnect" href="./DMSans-Regular.ttf">
+    <script src="http://code.highcharts.com/highcharts.js"></script> <!--debo poner la script de la libreria higcharts-->
+    <title>Interactive expensive chart</title>
+</head>
+<body>
+    <header>
+        <section class="head">
+            <h1>My balance</h1>
+            <p>$921.48</p>
+        </section>
+        <section class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </section>
+    </header>
+    <main>
+        <h2 id="title" style="display:none;">Spending - Last 7 days</h2>
+        <section>
+            <div id="container"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="total">
+             <h3>Total this month</h3>
+             <p>$478.33</p>
+        </section>
+        <section class="last">
+              <h4>+2.4%</h4>
+              <p>from last month</p>
+        </section>
+    </footer>
+    <script type="module" src="./datos.js"></script>
+    <script type="module"  src="./interactive.js"></script>
+</body>
+</html>
