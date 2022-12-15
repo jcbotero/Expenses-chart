@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="./stly.css" rel="stylesheet">
     <link rel="preconnect" href="./DMSans-Regular.ttf">
-    <script src="http://code.highcharts.com/highcharts.js"></script> <!--debo poner la script de la libreria higcharts-->
+    <script src="http://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world-highres.js"></script> <!--debo poner la script de la libreria higcharts-->
     <title>Interactive expensive chart</title>
 </head>
 <body>
     <header>
         <section class="head">
-            <h1>My balance</h1>
+            <h1>My Balance</h1>
             <p>$921.48</p>
         </section>
         <section class="logo">
@@ -35,7 +39,7 @@
               <p>from last month</p>
         </section>
     </footer>
-    <script type="module" src="./datos.js"></script>
+    <script  src="./datos.js"></script>
     <script type="module"  src="./interactive.js"></script>
 </body>
 </html>
